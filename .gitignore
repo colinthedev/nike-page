@@ -1,0 +1,7 @@
+logs/
+	.DS_Store
+	.gitignore
+	.sass-cache/
+	.vscode/
+	node_modules/
+	package-lock.json
