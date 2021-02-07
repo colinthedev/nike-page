@@ -1,0 +1,167 @@
+//HEADER
+.logo { //Header Nike Logo
+    margin: 2.5rem 0rem 2.5rem 0rem;
+    -moz-margin-start : 1rem;
+}
+
+.headerContainer {
+    &__rBottom-search--icon { //Header Search Box Icon
+        cursor: pointer;
+        height: 1.75rem;
+    }
+}
+
+.favIcon { //Header Favorite Icon
+    height: 1.9rem;
+    width: 1.9rem;
+    margin-left: 1rem;
+}
+
+.bagIcon { //Header Shopping Bag Icon
+    height: 1.9rem;
+    width: 1.9rem;
+    margin-right: 1rem;
+}
+
+.numContainer { // Main Content Size Number Selection
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    height: 8rem;
+
+    &__wrapper {
+        cursor: pointer;
+        display: grid;
+        height: 3rem;
+        width: 3rem;
+        color: #000000;
+        background: #F8F9FB;
+        border: 1px solid #000000;
+        box-shadow: inset 0, 0, 0, 1px #000000;
+        border-radius: 50%;
+        margin-right: -.75rem;
+    }
+
+    &__wrapper button {
+        position: relative;
+        font-size: 1rem;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+    &__wrapper:hover {
+        background: radial-gradient(circle, rgba(248,249,251,1) 50%, rgba(212,118,214,1) 100%);
+        transform: translateX(-3px);
+        border: 1px solid #D476D6;
+        box-shadow: inset 0, 0, 0, 1px #D476D6;
+        z-index: 1000;
+    }
+
+    &__wrapper:active {
+        background: radial-gradient(circle, rgba(248,249,251,1) 0%, rgba(212,118,214,1) 100%);
+        transform: translateX(-3px);
+        border: 1px solid #D476D6;
+        box-shadow: inset 0, 0, 0, 1px #D476D6;
+        z-index: 1000;
+    }
+}
+
+.span { // Main Content Section Reviews Expand Arrow
+    cursor: pointer;
+    color: black;
+    transition: all ease-in .25s;
+}
+
+.spanshow {
+    transform: rotate(90deg);
+}
+
+//BUTTONS
+.spacerDivTwo {
+    display: block;
+    height: 5rem;
+    width: 50rem;
+}
+
+@media only screen and (max-width: 1409px) {
+    .spacerDivTwo {
+        width: 5rem;
+    }
+}
+
+.buttonGrp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2.5rem;
+    width: 70rem;
+    height: 5rem;
+    font-size: 2rem;
+    font-family: 'Monda', sans-serif;
+    z-index: 10000000;
+
+    &__favorite {
+        @include solidButton;
+        background: var(--color-background-favorites);
+        color: var(--color-text-favorites);
+        transition: all ease-in .25s;
+    }
+
+    &__favorite:hover {
+        background: radial-gradient(circle, rgba(248,249,251,1) 30%, rgba(255,255,255,1) 70%);
+        opacity: .85;
+        // box-shadow: inset 0 0 0 3px #D476D6;
+    }
+
+    &__favorite:active {
+        transform: translateY(3px);
+    }
+    
+    &__bag {
+        @include solidButton;
+        background: var(--color-background-CTA);
+        color: var(--color-text-CTA);
+        margin: 0rem 2rem 0rem 1rem;
+        transition: all ease-in .25s;
+    }
+
+    &__bag:hover {
+        background: radial-gradient(circle, rgba(212,118,214,1) 30%, rgba(224,139,226,1) 70%);
+        // box-shadow: inset 0 0 0 3px #fff;
+        opacity: .85;
+    }
+
+    &__bag:active {
+        transform: translateY(3px);
+    }
+}
+
+//FOOTER
+.socialIcons {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-top: 1rem;
+}
+
+.footercredit {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--color-text-footerwhite);
+    font-family: 'Monda', sans-serif;
+    font-size: 1.25rem;
+    line-height: 2.7rem;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: 6rem;
+    margin-bottom: .25rem;
+}
+
+.starSmall {
+    display: flex;
+    max-height: 4rem;
+    max-width: 10rem;
+    margin-right: 1.5rem;
+}

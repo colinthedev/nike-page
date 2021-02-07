@@ -1,0 +1,43 @@
+@mixin solidButton {
+    cursor: pointer;
+    width: 20rem;
+    height: 5rem;
+    font-size: 2.5rem;
+    font-family: 'Monda', sans-serif;
+    border-radius: 3rem;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+@mixin footerText {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Monda', sans-serif;
+    font-size: 1.25rem;
+    line-height: 2.7rem;
+    margin-left: 5rem;
+}
+
+@mixin reviewsBottom {
+    background-color: #F8F9FB;
+    height: 18rem;
+    width: 46.5%;
+}
+
+@mixin reviewsParagraph {
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin: 0rem 1.25rem 0rem 1.25rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+}
+
+@mixin reviewsTitle {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    flex-direction: row;
+    width: 100%;
+    height: 3.5rem;
+}

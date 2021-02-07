@@ -1,0 +1,269 @@
+//Phones landscape
+@media screen and (orientation:landscape)
+and (min-device-width: 320px) 
+and (max-device-width: 879px) 
+and (-webkit-min-device-pixel-ratio: 2) {
+    .imgContainer {
+        margin-left: 1.5rem !important;
+    }
+ }
+
+
+ //Phones
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 879px)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .logo { //Header Nike Logo
+        margin-left: 1rem;
+        -moz-margin-start : 1rem;
+    }
+
+     //Containers
+
+    .headerContainer {
+        &__middle, 
+        &__middle-purchase button,
+        &__middle-guarantee,
+        &__rTop, 
+        &__rTop button,
+        &__rBottom, 
+        &__rBottom-search {
+            display: none;
+        } 
+    }
+
+    .mainContainer {
+        margin-top: 2rem;
+    }
+
+    .imgContainer__border {
+        width: 300px;
+    }
+
+    .infoContainer {
+        height: inherit;
+    }
+
+    //Headers + Description
+
+    .infoContainer,
+    .infoContainer__hBackground {
+        width: 320px;
+        margin-left: 0rem;
+    }
+
+    .infoContainer__hBackground {
+        height: 5rem;
+    }
+
+    .infoContainer__header {
+        display: flex;
+        justify-content: center;
+        width: 320px;
+        font-size: 3rem;
+    }
+
+    .infoContainer__description {
+        margin: 4rem 2rem 0 2.75rem;
+    }
+
+    .infoContainer__hr {
+        width: 70%;
+    }
+
+    //Size and Color Section
+
+    .infoMiddle {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 235px;
+        margin: 1rem 1rem 1rem 1rem;
+    }
+
+    .infoMiddle__color {
+        margin-left: 0;
+        justify-content: space-between;
+    }
+
+    //Review Section
+
+    .infoMiddle__reviews {
+        display: flex;
+        flex-direction: row;
+    
+    }
+
+    .reviewsActive {
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .reviewsActive__bottomL {
+        width: 300px;
+        height: inherit;
+    }
+
+    .reviewsActive__bottomR {
+        width: 300px;
+        height: inherit;
+    }
+
+    .reviewsHide {
+        display: none;
+    }
+
+    //Nike Shoe Images
+
+    .imgContainer {
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    //Button
+
+    .buttonGrp {
+        width: inherit !important;
+        height: 14rem !important;
+        flex-direction: column !important;
+        justify-content: space-between;
+    }
+
+    //Footer
+
+    .footerContainer {
+        align-items: flex-start;
+    }
+
+    .giftContainer {
+        font-size: 1.05rem;
+        margin-left: .75rem;
+        line-height: 2.2rem;
+    }
+
+    .getContainer {
+        font-size: 1.05rem;
+        margin-left: .5rem;
+        line-height: 2.2rem;
+
+    }
+
+    .aboutContainer {
+        width: 80px;
+        font-size: 1.05rem;
+        margin-left: .5rem;
+        line-height: 2.2rem;
+
+    }
+
+    .smlcolumn {
+        width: inherit;
+        height: inherit !important;
+        align-items: center;
+
+    }
+
+    .socialIcons {
+        width: 90px;
+        height: 35px;
+        margin-left: 0 !important;
+    }
+
+    .footercredit {
+        font-size: .75rem !important;
+        margin-right: auto !important;
+        margin-left: auto !important;
+    }
+
+}
+
+//Iphone 5/SE 
+@media only screen and (orientation:landscape)
+and (min-device-width: 568px) 
+and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .imgContainer {
+        margin-left: 0 !important;
+    }
+}
+
+//Iphone 4
+@media only screen and (orientation:landscape)
+and (min-device-width: 480px) 
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .imgContainer {
+        margin-left: 0 !important;
+    }
+}
+
+//Nexus 4 landscape
+@media only screen and (orientation:landscape)
+and (min-device-width: 640px) 
+and (max-device-width: 641px)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .imgContainer {
+        margin-left: .25rem !important;
+    }
+}
+
+//Ipad Horizontal
+@media only screen
+and (min-device-width: 768px) 
+and (max-device-width: 800px)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .imgContainer {
+        margin-left: 2rem;
+    }
+}
+
+//Desktop
+@media only screen and (min-width: 500px) and (max-width: 1409px) {
+
+    .buttonGrp {
+        width: inherit !important;
+        height: 14rem !important;
+        flex-direction: column !important;
+        justify-content: space-between;
+    }
+
+    .infoContainer {
+        height: inherit;
+        margin-bottom: auto;
+    }
+
+    .giftContainer,
+    .getContainer,
+    .aboutContainer {
+        margin-bottom: auto;
+    }
+
+    .aboutContainer {
+        margin-right: 1rem;
+    }
+
+    .socialIcons {
+        margin-top: 1rem !important;
+        margin-right: 1rem ;
+    }
+
+    .footercredit {
+        margin: 0rem auto 0rem auto !important;
+    }
+}
+
+//Desktop
+@media only screen and (min-width: 1340px) {
+
+    .infoContainer {
+        margin-left: 1.5rem;
+    }
+
+    .imgContainer {
+        margin-left: 1.5rem;
+    }
+}

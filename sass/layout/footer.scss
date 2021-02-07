@@ -1,0 +1,42 @@
+.footerContainer {
+    display: flex;
+    bottom: 0;
+    // left: 0;
+    // right: 0;
+    // height: 12rem;
+    margin-top: 20rem;
+    width: 100vw;
+    background: var(--color-background-footer);
+
+    z-index: 1000;
+}
+
+.smlcolumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45%;
+}
+
+.giftContainer {
+    @include footerText;
+    color: var(--color-text-footerwhite);
+}
+
+.getContainer {
+    @include footerText;
+    color: var(--color-text-footerwhite);
+
+    &__greyText {
+        color: var(--color-text-footergrey);
+    }
+}
+
+.aboutContainer {
+    @include footerText;
+    color: var(--color-text-footerwhite);
+
+    &__greyText {
+        color: var(--color-text-footergrey);
+    }
+}
