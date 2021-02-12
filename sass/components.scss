@@ -1,6 +1,6 @@
 //HEADER
 .logo { //Header Nike Logo
-    margin: 2.5rem 0rem 2.5rem 0rem;
+    margin: 2.5rem 0rem 2.5rem 1rem;
     -moz-margin-start : 1rem;
 }
 
@@ -97,7 +97,6 @@
     height: 5rem;
     font-size: 2rem;
     font-family: 'Monda', sans-serif;
-    z-index: 10000000;
 
     &__favorite {
         @include solidButton;

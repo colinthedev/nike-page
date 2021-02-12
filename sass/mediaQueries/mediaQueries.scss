@@ -17,21 +17,23 @@ and (-webkit-min-device-pixel-ratio: 2) {
     .logo { //Header Nike Logo
         margin-left: 1rem;
         -moz-margin-start : 1rem;
+        max-width: 15%;
     }
-
-     //Containers
-
+    
+//Containers
     .headerContainer {
-        &__middle, 
-        &__middle-purchase button,
-        &__middle-guarantee,
+        // &__middle, 
+        // &__middle-purchase button,
+        // &__middle-guarantee,
         &__rTop, 
-        &__rTop button,
-        &__rBottom, 
-        &__rBottom-search {
+        &__rTop button {
             display: none;
         } 
     }
+
+    .headerContainer__rBottom {
+        width: 22rem;
+    }    
 
     .mainContainer {
         margin-top: 2rem;
@@ -218,6 +220,93 @@ and (max-device-width: 800px)
 and (-webkit-min-device-pixel-ratio: 2) {
     .imgContainer {
         margin-left: 2rem;
+    }
+}
+
+//Mobile Navigation breakpoint
+@media only screen and (max-width: 1000px) {
+
+.headerContainer__burger {
+    cursor: pointer;
+    background-color: transparent;
+    height: 1rem;
+    width: 3rem;
+    margin: 3.25rem 2rem 3.25rem 0;
+    z-index: 30000;
+
+
+    &-1 {
+        background-color: rgb(0, 0, 0);
+        border-radius: 1rem;
+        height: .3rem;
+        top: 100%;
+    }
+
+    &-2 {
+        background-color: rgb(0, 0, 0);
+        border-radius: 1rem;
+        margin: .2rem 0rem;
+        height: .3rem;
+        top: 50%;
+    }
+
+    &-3 {
+        background-color: rgb(0, 0, 0);
+        border-radius: 1rem;
+        height: .3rem;
+        top: 0%;
+    }
+}
+
+    .headerContainer__burger-active {
+        position: fixed;
+        right: 0;
+    }
+
+    .burgerLine-active { 
+        background-color: rgb(255, 255, 255);
+    }
+
+    
+    .headerContainer__middle {//Shopping Links And Statement Container Hidden
+        display: none;
+    }
+
+    .headerContainer__middle-active {//Shopping Links And Statement Container Shown
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+        color: white;
+
+        z-index: 1000;
+    }
+
+    .headerContainer__middle-purchase-active {//Shopping Links Container Shown
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: white;
+        height: 50vh;
+
+    }
+
+    .btnactive {//Shopping Links Buttons Shown
+        display: flex;
+        flex-direction: column;
+        align-content: space-evenly;
+        color: white;
+
+    }
+
+    .headerContainer__rTop {//Search box and icons Hidden
+        display: none;
+    }
+
+    .headerContainer__rBottom {//Help, join-us, sign-in buttons Shown
+        margin: 0 auto 0 auto;
     }
 }
 

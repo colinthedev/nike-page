@@ -539,7 +539,8 @@ template {
   font-family: 'Montserrat Alternates', sans-serif;
   height: 18rem;
   font-size: 2rem;
-  color: #303030; }
+  color: #303030;
+  z-index: 100; }
   .infoMiddle__size {
     margin-right: 1rem; }
   .infoMiddle__reviews {
@@ -575,7 +576,8 @@ template {
     width: 100%; }
     .reviewsActive__top-smallTxt {
       cursor: pointer;
-      font-size: 1.05rem; }
+      font-size: 1.05rem;
+      padding: .5rem; }
     .reviewsActive__top-largeTxt {
       font-size: 2rem; }
   .reviewsActive__bottomL {
@@ -615,16 +617,26 @@ template {
       line-height: 1.5rem;
       letter-spacing: 1px; }
 
+.logo-active {
+  display: none; }
+
+.headerContainer__rBottom-active {
+  display: none; }
+
 @media screen and (orientation: landscape) and (min-device-width: 320px) and (max-device-width: 879px) and (-webkit-min-device-pixel-ratio: 2) {
   .imgContainer {
     margin-left: 1.5rem !important; } }
 @media only screen and (min-device-width: 320px) and (max-device-width: 879px) and (-webkit-min-device-pixel-ratio: 2) {
   .logo {
     margin-left: 1rem;
-    -moz-margin-start: 1rem; }
+    -moz-margin-start: 1rem;
+    max-width: 15%; }
 
-  .headerContainer__middle, .headerContainer__middle-purchase button, .headerContainer__middle-guarantee, .headerContainer__rTop, .headerContainer__rTop button, .headerContainer__rBottom, .headerContainer__rBottom-search {
+  .headerContainer__rTop, .headerContainer__rTop button {
     display: none; }
+
+  .headerContainer__rBottom {
+    width: 22rem; }
 
   .mainContainer {
     margin-top: 2rem; }
@@ -742,6 +754,69 @@ template {
 @media only screen and (min-device-width: 768px) and (max-device-width: 800px) and (-webkit-min-device-pixel-ratio: 2) {
   .imgContainer {
     margin-left: 2rem; } }
+@media only screen and (max-width: 1000px) {
+  .headerContainer__burger {
+    cursor: pointer;
+    background-color: transparent;
+    height: 1rem;
+    width: 3rem;
+    margin: 3.25rem 2rem 3.25rem 0;
+    z-index: 30000; }
+    .headerContainer__burger-1 {
+      background-color: black;
+      border-radius: 1rem;
+      height: .3rem;
+      top: 100%; }
+    .headerContainer__burger-2 {
+      background-color: black;
+      border-radius: 1rem;
+      margin: .2rem 0rem;
+      height: .3rem;
+      top: 50%; }
+    .headerContainer__burger-3 {
+      background-color: black;
+      border-radius: 1rem;
+      height: .3rem;
+      top: 0%; }
+
+  .headerContainer__burger-active {
+    position: fixed;
+    right: 0; }
+
+  .burgerLine-active {
+    background-color: white; }
+
+  .headerContainer__middle {
+    display: none; }
+
+  .headerContainer__middle-active {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    z-index: 1000; }
+
+  .headerContainer__middle-purchase-active {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    height: 50vh; }
+
+  .btnactive {
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+    color: white; }
+
+  .headerContainer__rTop {
+    display: none; }
+
+  .headerContainer__rBottom {
+    margin: 0 auto 0 auto; } }
 @media only screen and (min-width: 500px) and (max-width: 1409px) {
   .buttonGrp {
     width: inherit !important;
@@ -774,7 +849,7 @@ template {
   .imgContainer {
     margin-left: 1.5rem; } }
 .logo {
-  margin: 2.5rem 0rem 2.5rem 0rem;
+  margin: 2.5rem 0rem 2.5rem 1rem;
   -moz-margin-start: 1rem; }
 
 .headerContainer__rBottom-search--icon {
@@ -848,8 +923,7 @@ template {
   width: 70rem;
   height: 5rem;
   font-size: 2rem;
-  font-family: 'Monda', sans-serif;
-  z-index: 10000000; }
+  font-family: 'Monda', sans-serif; }
   .buttonGrp__favorite {
     cursor: pointer;
     width: 20rem;
