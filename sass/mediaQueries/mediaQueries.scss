@@ -9,7 +9,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
  }
 
 
- //Phones
+//Phones
 @media only screen 
 and (min-device-width: 320px) 
 and (max-device-width: 879px)
@@ -20,16 +20,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
         max-width: 15%;
     }
     
-//Containers
-    .headerContainer {
-        // &__middle, 
-        // &__middle-purchase button,
-        // &__middle-guarantee,
-        &__rTop, 
-        &__rTop button {
-            display: none;
-        } 
-    }
+    //Containers
 
     .headerContainer__rBottom {
         width: 22rem;
@@ -151,8 +142,9 @@ and (-webkit-min-device-pixel-ratio: 2) {
         font-size: 1.05rem;
         margin-left: .5rem;
         line-height: 2.2rem;
-
+        width: 10rem;
     }
+
 
     .aboutContainer {
         width: 80px;
@@ -160,6 +152,10 @@ and (-webkit-min-device-pixel-ratio: 2) {
         margin-left: .5rem;
         line-height: 2.2rem;
 
+    }
+
+    .txtSmall {
+        font-size: .83rem;
     }
 
     .smlcolumn {
@@ -180,7 +176,6 @@ and (-webkit-min-device-pixel-ratio: 2) {
         margin-right: auto !important;
         margin-left: auto !important;
     }
-
 }
 
 //Iphone 5/SE 
@@ -213,18 +208,8 @@ and (-webkit-min-device-pixel-ratio: 2) {
     }
 }
 
-//Ipad Horizontal
-@media only screen
-and (min-device-width: 768px) 
-and (max-device-width: 800px)
-and (-webkit-min-device-pixel-ratio: 2) {
-    .imgContainer {
-        margin-left: 2rem;
-    }
-}
-
 //Mobile Navigation breakpoint
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 767px) {
 
 .headerContainer__burger {
     cursor: pointer;
@@ -310,7 +295,33 @@ and (-webkit-min-device-pixel-ratio: 2) {
     }
 }
 
+//Tablets
+@media only screen
+and (min-device-width: 768px) 
+and (max-device-width: 1000px)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .imgContainer {
+        margin-left: 2rem;
+    }
+
+    .headerContainer__middle-purchase button {
+        font-size: 1.75rem;
+    }
+}
+
 //Desktop
+@media only screen and (min-width: 1340px) {
+
+    .infoContainer {
+        margin-left: 1.5rem;
+    }
+
+    .imgContainer {
+        margin-left: 1.5rem;
+    }
+}
+
+//Desktop And Tablets
 @media only screen and (min-width: 500px) and (max-width: 1409px) {
 
     .buttonGrp {
@@ -342,17 +353,5 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
     .footercredit {
         margin: 0rem auto 0rem auto !important;
-    }
-}
-
-//Desktop
-@media only screen and (min-width: 1340px) {
-
-    .infoContainer {
-        margin-left: 1.5rem;
-    }
-
-    .imgContainer {
-        margin-left: 1.5rem;
     }
 }

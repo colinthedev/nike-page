@@ -632,9 +632,6 @@ template {
     -moz-margin-start: 1rem;
     max-width: 15%; }
 
-  .headerContainer__rTop, .headerContainer__rTop button {
-    display: none; }
-
   .headerContainer__rBottom {
     width: 22rem; }
 
@@ -720,13 +717,17 @@ template {
   .getContainer {
     font-size: 1.05rem;
     margin-left: .5rem;
-    line-height: 2.2rem; }
+    line-height: 2.2rem;
+    width: 10rem; }
 
   .aboutContainer {
     width: 80px;
     font-size: 1.05rem;
     margin-left: .5rem;
     line-height: 2.2rem; }
+
+  .txtSmall {
+    font-size: .83rem; }
 
   .smlcolumn {
     width: inherit;
@@ -751,10 +752,7 @@ template {
 @media only screen and (orientation: landscape) and (min-device-width: 640px) and (max-device-width: 641px) and (-webkit-min-device-pixel-ratio: 2) {
   .imgContainer {
     margin-left: .25rem !important; } }
-@media only screen and (min-device-width: 768px) and (max-device-width: 800px) and (-webkit-min-device-pixel-ratio: 2) {
-  .imgContainer {
-    margin-left: 2rem; } }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 767px) {
   .headerContainer__burger {
     cursor: pointer;
     background-color: transparent;
@@ -817,6 +815,18 @@ template {
 
   .headerContainer__rBottom {
     margin: 0 auto 0 auto; } }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1000px) and (-webkit-min-device-pixel-ratio: 2) {
+  .imgContainer {
+    margin-left: 2rem; }
+
+  .headerContainer__middle-purchase button {
+    font-size: 1.75rem; } }
+@media only screen and (min-width: 1340px) {
+  .infoContainer {
+    margin-left: 1.5rem; }
+
+  .imgContainer {
+    margin-left: 1.5rem; } }
 @media only screen and (min-width: 500px) and (max-width: 1409px) {
   .buttonGrp {
     width: inherit !important;
@@ -842,12 +852,6 @@ template {
 
   .footercredit {
     margin: 0rem auto 0rem auto !important; } }
-@media only screen and (min-width: 1340px) {
-  .infoContainer {
-    margin-left: 1.5rem; }
-
-  .imgContainer {
-    margin-left: 1.5rem; } }
 .logo {
   margin: 2.5rem 0rem 2.5rem 1rem;
   -moz-margin-start: 1rem; }
