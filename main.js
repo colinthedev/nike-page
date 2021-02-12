@@ -5,6 +5,10 @@ const navOpen = () => {
     const burger1 = document.querySelector(".headerContainer__burger-1");
     const burger2 = document.querySelector(".headerContainer__burger-2");
     const burger3 = document.querySelector(".headerContainer__burger-3");
+    //Burger Animation
+    const burger1open = document.querySelector(".headerContainer__burger-1");
+    const burger2open = document.querySelector(".headerContainer__burger-2");
+    const burger3open = document.querySelector(".headerContainer__burger-3");
     //Nav Container And Items
     const linkContainer = document.querySelector(".headerContainer__middle");
     const linkItems = document.querySelector(".headerContainer__middle-purchase");
@@ -17,6 +21,10 @@ const navOpen = () => {
         burger1.classList.toggle("burgerLine-active");
         burger2.classList.toggle("burgerLine-active");
         burger3.classList.toggle("burgerLine-active");
+        //Burger Animation
+        burger1open.classList.toggle("headerContainer__burger-1--open");
+        burger2open.classList.toggle("headerContainer__burger-2--open");
+        burger3open.classList.toggle("headerContainer__burger-3--open");
         //Nav Container And Items
         linkContainer.classList.toggle("headerContainer__middle-active");
         linkItems.classList.toggle("headerContainer__middle-purchase-active");

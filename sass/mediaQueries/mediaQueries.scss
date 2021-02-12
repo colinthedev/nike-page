@@ -144,6 +144,63 @@ and (-webkit-min-device-pixel-ratio: 2) {
     }
 }
 
+//Phones
+// 666px
+@media only screen  
+and (max-device-width: 567px)
+and (-webkit-min-device-pixel-ratio: 2) {
+    // Footer
+
+    .footerContainer {
+        align-items: flex-start;
+    }
+
+    .giftContainer {
+        font-size: 1.05rem;
+        margin-left: .75rem;
+        line-height: 2.2rem;
+    }
+
+    .getContainer {
+        font-size: 1.05rem;
+        margin-left: .5rem;
+        line-height: 2.2rem;
+        width: 10rem;
+    }
+
+
+    .aboutContainer {
+        width: 80px;
+        font-size: 1.05rem;
+        margin-left: .5rem;
+        line-height: 2.2rem;
+
+    }
+
+    .txtSmall {
+        font-size: .83rem;
+    }
+
+    .smlcolumn {
+        width: inherit;
+        height: inherit !important;
+        align-items: center;
+
+    }
+
+    .socialIcons {
+        width: 90px;
+        height: 35px;
+        margin-left: 0 !important;
+    }
+
+    .footercredit {
+        font-size: .75rem !important;
+        margin-right: auto !important;
+        margin-left: auto !important;
+    }
+} 
+
 //Iphone 5/SE 
 @media only screen and (orientation:landscape)
 and (min-device-width: 568px) 
@@ -164,73 +221,17 @@ and (-webkit-min-device-pixel-ratio: 2) {
     }
 }
 
- //Phones
-//  maxwidth: 666px
-// 567px
- @media only screen  
- and (max-device-width: 567px)
- and (-webkit-min-device-pixel-ratio: 2) {
-     // Footer
- 
-     .footerContainer {
-         align-items: flex-start;
-     }
- 
-     .giftContainer {
-         font-size: 1.05rem;
-         margin-left: .75rem;
-         line-height: 2.2rem;
-     }
- 
-     .getContainer {
-         font-size: 1.05rem;
-         margin-left: .5rem;
-         line-height: 2.2rem;
-         width: 10rem;
-     }
- 
- 
-     .aboutContainer {
-         width: 80px;
-         font-size: 1.05rem;
-         margin-left: .5rem;
-         line-height: 2.2rem;
- 
-     }
- 
-     .txtSmall {
-         font-size: .83rem;
-     }
- 
-     .smlcolumn {
-         width: inherit;
-         height: inherit !important;
-         align-items: center;
- 
-     }
- 
-     .socialIcons {
-         width: 90px;
-         height: 35px;
-         margin-left: 0 !important;
-     }
- 
-     .footercredit {
-         font-size: .75rem !important;
-         margin-right: auto !important;
-         margin-left: auto !important;
-     }
- } 
 
 //Mobile Navigation breakpoint
 @media only screen and (max-width: 767px) {
 
+//Burger Button Default State
 .headerContainer__burger {
     cursor: pointer;
     background-color: transparent;
     height: 1rem;
     width: 3rem;
-    margin: 3.25rem 2rem 3.25rem 0;
+    margin: 3.25rem 2rem 3.25rem auto;
     z-index: 30000;
 
 
@@ -238,6 +239,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
         background-color: rgb(0, 0, 0);
         border-radius: 1rem;
         height: .3rem;
+        width: 3rem;
         top: 100%;
     }
 
@@ -246,6 +248,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
         border-radius: 1rem;
         margin: .2rem 0rem;
         height: .3rem;
+        width: 3rem;
         top: 50%;
     }
 
@@ -253,16 +256,37 @@ and (-webkit-min-device-pixel-ratio: 2) {
         background-color: rgb(0, 0, 0);
         border-radius: 1rem;
         height: .3rem;
+        width: 3rem;
         top: 0%;
     }
 }
 
-    .headerContainer__burger-active {
+//Burger Button Transition Animation
+    .burgerLine {
+        transition: .35s ease-in-out;
+    }
+
+    .headerContainer__burger-1--open {
+        transform: rotate(-140deg) translateY(-8px) translateX(-7px);
+        
+    }
+
+    .headerContainer__burger-2--open {
+        transform: translateY(5px) translateX(0px);
+        opacity: 0;
+    }
+
+    .headerContainer__burger-3--open {
+        transform: rotate(140deg);
+    }
+
+//Burger Button Menu Active 
+    .headerContainer__burger-active {//Burger Button 
         position: fixed;
         right: 0;
     }
 
-    .burgerLine-active { 
+    .burgerLine-active {//Burger Button Color When Mobile Nav Open
         background-color: rgb(255, 255, 255);
     }
 
@@ -289,7 +313,6 @@ and (-webkit-min-device-pixel-ratio: 2) {
         justify-content: space-between;
         color: white;
         height: 50vh;
-
     }
 
     .btnactive {//Shopping Links Buttons Shown
@@ -297,15 +320,24 @@ and (-webkit-min-device-pixel-ratio: 2) {
         flex-direction: column;
         align-content: space-evenly;
         color: white;
-
     }
 
     .headerContainer__rTop {//Search box and icons Hidden
-        display: none;
+        // display: none;
+        display: flex;
+        right: inherit;
+        width: 22rem;
+    }
+
+    .smlScreenCntr { //Div Container For Mobile Only
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
 
     .headerContainer__rBottom {//Help, join-us, sign-in buttons Shown
-        margin: 0 auto 0 auto;
+        height: 4rem;
     }
 }
 
