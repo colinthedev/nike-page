@@ -8,7 +8,6 @@ and (-webkit-min-device-pixel-ratio: 2) {
     }
  }
 
-
 //Phones
 @media only screen 
 and (min-device-width: 320px) 
@@ -126,65 +125,12 @@ and (-webkit-min-device-pixel-ratio: 2) {
         justify-content: space-between;
     }
 
-    //Footer
-
-    .footerContainer {
-        align-items: flex-start;
-    }
-
-    .giftContainer {
-        font-size: 1.05rem;
-        margin-left: .75rem;
-        line-height: 2.2rem;
-    }
-
-    .getContainer {
-        font-size: 1.05rem;
-        margin-left: .5rem;
-        line-height: 2.2rem;
-        width: 10rem;
-    }
-
-
-    .aboutContainer {
-        width: 80px;
-        font-size: 1.05rem;
-        margin-left: .5rem;
-        line-height: 2.2rem;
-
-    }
-
-    .txtSmall {
-        font-size: .83rem;
-    }
-
-    .smlcolumn {
-        width: inherit;
-        height: inherit !important;
-        align-items: center;
-
-    }
-
-    .socialIcons {
-        width: 90px;
-        height: 35px;
-        margin-left: 0 !important;
-    }
+    //Footer 
 
     .footercredit {
-        font-size: .75rem !important;
+        font-size: .85rem !important;
         margin-right: auto !important;
         margin-left: auto !important;
-    }
-}
-
-//Iphone 5/SE 
-@media only screen and (orientation:landscape)
-and (min-device-width: 568px) 
-and (max-device-width: 568px)
-and (-webkit-min-device-pixel-ratio: 2) {
-    .imgContainer {
-        margin-left: 0 !important;
     }
 }
 
@@ -192,6 +138,16 @@ and (-webkit-min-device-pixel-ratio: 2) {
 @media only screen and (orientation:landscape)
 and (min-device-width: 480px) 
 and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .imgContainer {
+        margin-left: 0 !important;
+    }
+}
+
+//Iphone 5/SE 
+@media only screen and (orientation:landscape)
+and (min-device-width: 568px) 
+and (max-device-width: 568px)
 and (-webkit-min-device-pixel-ratio: 2) {
     .imgContainer {
         margin-left: 0 !important;
@@ -207,6 +163,64 @@ and (-webkit-min-device-pixel-ratio: 2) {
         margin-left: .25rem !important;
     }
 }
+
+ //Phones
+//  maxwidth: 666px
+// 567px
+ @media only screen  
+ and (max-device-width: 567px)
+ and (-webkit-min-device-pixel-ratio: 2) {
+     // Footer
+ 
+     .footerContainer {
+         align-items: flex-start;
+     }
+ 
+     .giftContainer {
+         font-size: 1.05rem;
+         margin-left: .75rem;
+         line-height: 2.2rem;
+     }
+ 
+     .getContainer {
+         font-size: 1.05rem;
+         margin-left: .5rem;
+         line-height: 2.2rem;
+         width: 10rem;
+     }
+ 
+ 
+     .aboutContainer {
+         width: 80px;
+         font-size: 1.05rem;
+         margin-left: .5rem;
+         line-height: 2.2rem;
+ 
+     }
+ 
+     .txtSmall {
+         font-size: .83rem;
+     }
+ 
+     .smlcolumn {
+         width: inherit;
+         height: inherit !important;
+         align-items: center;
+ 
+     }
+ 
+     .socialIcons {
+         width: 90px;
+         height: 35px;
+         margin-left: 0 !important;
+     }
+ 
+     .footercredit {
+         font-size: .75rem !important;
+         margin-right: auto !important;
+         margin-left: auto !important;
+     }
+ } 
 
 //Mobile Navigation breakpoint
 @media only screen and (max-width: 767px) {
