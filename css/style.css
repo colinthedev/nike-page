@@ -624,7 +624,7 @@ template {
 @media screen and (orientation: landscape) and (min-device-width: 320px) and (max-device-width: 879px) and (-webkit-min-device-pixel-ratio: 2) {
   .imgContainer {
     margin-left: 1.5rem !important; } }
-@media only screen and (min-device-width: 320px) and (max-device-width: 879px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (max-device-width: 879px) and (-webkit-min-device-pixel-ratio: 2) {
   .logo {
     margin-left: 1rem;
     -moz-margin-start: 1rem;
@@ -755,7 +755,7 @@ template {
 @media only screen and (orientation: landscape) and (min-device-width: 640px) and (max-device-width: 641px) and (-webkit-min-device-pixel-ratio: 2) {
   .imgContainer {
     margin-left: .25rem !important; } }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 870px) {
   .headerContainer__burger {
     cursor: pointer;
     background-color: transparent;
@@ -854,6 +854,32 @@ template {
 
   .imgContainer {
     margin-left: 1.5rem; } }
+@media only screen and (max-width: 650px) {
+  .infoContainer__hBackground {
+    width: 100%; }
+
+  .infoContainer__header {
+    margin: 0 auto 0 auto; }
+
+  .infoMiddle__color {
+    width: 45%;
+    margin-left: 0;
+    margin-right: 55%;
+    justify-content: space-between; }
+
+  .reviewsActive {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: white;
+    margin-bottom: 2rem;
+    font-family: 'Montserrat Alternates', sans-serif; }
+
+  .reviewsActive__bottomL {
+    height: auto; }
+
+  .reviewsActive__bottomR {
+    height: auto; } }
 @media only screen and (min-width: 500px) and (max-width: 1409px) {
   .buttonGrp {
     width: inherit !important;

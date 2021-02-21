@@ -10,7 +10,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
 //Phones
 @media only screen 
-and (min-device-width: 320px) 
+// and (min-device-width: 320px) 
 and (max-device-width: 879px)
 and (-webkit-min-device-pixel-ratio: 2) {
     .logo { //Header Nike Logo
@@ -221,9 +221,9 @@ and (-webkit-min-device-pixel-ratio: 2) {
     }
 }
 
-
+//767px
 //Mobile Navigation breakpoint
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 870px) {
 
 //Burger Button Default State
 .headerContainer__burger {
@@ -365,6 +365,49 @@ and (-webkit-min-device-pixel-ratio: 2) {
     .imgContainer {
         margin-left: 1.5rem;
     }
+}
+
+//Desktop
+@media only screen and (max-width: 650px) {
+
+    .infoContainer__hBackground {
+        width: 100%;
+    }
+
+    .infoContainer__header {
+        margin: 0 auto 0 auto;
+        // font-size: 5.05rem;
+    }
+
+    .infoMiddle__color {
+        width: 45%;
+        margin-left: 0;
+        margin-right: 55%;
+        justify-content: space-between;
+
+
+    }
+
+    .reviewsActive {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: white;
+        margin-bottom: 2rem;
+        font-family: 'Montserrat Alternates', sans-serif;
+    }
+
+    .reviewsActive__bottomL {
+        height: auto;
+    }
+
+    .reviewsActive__bottomR {
+        height: auto;
+    }
+
+    // .imgContainer {
+    //     margin-top: 7.5rem;
+    // }
 }
 
 //Desktop And Tablets
