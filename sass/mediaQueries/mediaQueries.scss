@@ -356,23 +356,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 }
 
 //Desktop
-@media only screen and (min-width: 1340px) {
-
-    .infoContainer {
-        margin-left: 1.5rem;
-    }
-
-    .imgContainer {
-        margin-left: 1.5rem;
-    }
-}
-
-//Desktop
 @media only screen and (max-width: 650px) {
-
-    .infoContainer__hBackground {
-        width: 100%;
-    }
 
     .infoContainer__header {
         margin: 0 auto 0 auto;
@@ -410,6 +394,18 @@ and (-webkit-min-device-pixel-ratio: 2) {
     // }
 }
 
+//Desktop
+@media only screen and (min-width: 1340px) {
+
+    .infoContainer {
+        margin-left: 1.5rem;
+    }
+
+    .imgContainer {
+        margin-left: 1.5rem;
+    }
+}
+
 //Desktop And Tablets
 @media only screen and (min-width: 500px) and (max-width: 1409px) {
 
@@ -442,5 +438,19 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
     .footercredit {
         margin: 0rem auto 0rem auto !important;
+    }
+}
+
+
+//4k Tv
+@media only screen and (min-width: 2000px) {
+
+    .mainContainer {
+        height: 100vh;
+    }
+
+    .buttonGrp {
+        width: 100% !important;
+        justify-content: center;
     }
 }

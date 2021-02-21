@@ -848,16 +848,7 @@ template {
 
   .headerContainer__middle-purchase button {
     font-size: 1.75rem; } }
-@media only screen and (min-width: 1340px) {
-  .infoContainer {
-    margin-left: 1.5rem; }
-
-  .imgContainer {
-    margin-left: 1.5rem; } }
 @media only screen and (max-width: 650px) {
-  .infoContainer__hBackground {
-    width: 100%; }
-
   .infoContainer__header {
     margin: 0 auto 0 auto; }
 
@@ -880,6 +871,12 @@ template {
 
   .reviewsActive__bottomR {
     height: auto; } }
+@media only screen and (min-width: 1340px) {
+  .infoContainer {
+    margin-left: 1.5rem; }
+
+  .imgContainer {
+    margin-left: 1.5rem; } }
 @media only screen and (min-width: 500px) and (max-width: 1409px) {
   .buttonGrp {
     width: inherit !important;
@@ -905,6 +902,13 @@ template {
 
   .footercredit {
     margin: 0rem auto 0rem auto !important; } }
+@media only screen and (min-width: 2000px) {
+  .mainContainer {
+    height: 100vh; }
+
+  .buttonGrp {
+    width: 100% !important;
+    justify-content: center; } }
 .logo {
   margin: 2.5rem 0rem 2.5rem 1rem;
   -moz-margin-start: 1rem; }
