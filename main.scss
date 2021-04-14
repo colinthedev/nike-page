@@ -1,9 +1,9 @@
 
-@import "sass/abstracts/mixins.scss";
 @import "sass/abstracts/variables.scss";
+@import "sass/abstracts/mixins.scss";
+@import "sass/abstracts/components.scss";
 
 @import "sass/base/reset.scss";
-@import "sass/base/typography.scss";
 
 @import "sass/layout/footer.scss";
 @import "sass/layout/header.scss";
@@ -12,4 +12,3 @@
 
 @import "sass/mediaQueries/mediaQueries.scss";
 
-@import "sass/components.scss";

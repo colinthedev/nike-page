@@ -4,18 +4,27 @@
     // left: 0;
     // right: 0;
     // height: 12rem;
-    margin-top: 20rem;
+    margin-top: 10rem;
     width: 100vw;
     background: var(--color-background-footer);
 
     z-index: 1000;
 }
 
-.smlcolumn {
+.iconContainer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
-    width: 45%;
+    margin: auto;
+    padding-right: 1.25rem;
+}
+
+.iconContainer a {
+    margin-right: .75rem;
+}
+
+.iconContainer a:hover {
+    transform: rotate(15deg) scale(1.25);
 }
 
 .giftContainer {
@@ -39,4 +48,8 @@
     &__greyText {
         color: var(--color-text-footergrey);
     }
+}
+
+.txtSmall:hover {
+    transform: scale(1.10);
 }

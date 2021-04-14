@@ -23,6 +23,11 @@
     margin-right: 1rem;
 }
 
+.bagIcon:hover,
+.favIcon:hover {
+    transform: scale(1.10);
+}
+
 .numContainer { // Main Content Size Number Selection
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -135,29 +140,6 @@
 }
 
 //FOOTER
-.socialIcons {
-    cursor: pointer;
-    display: flex;
-    flex-direction: row;
-    margin-left: auto;
-    margin-top: 1rem;
-}
-
-.footercredit {
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: var(--color-text-footerwhite);
-    font-family: 'Monda', sans-serif;
-    font-size: 1.25rem;
-    line-height: 2.7rem;
-    margin-top: auto;
-    margin-left: auto;
-    margin-right: 6rem;
-    margin-bottom: .25rem;
-}
-
 .starSmall {
     display: flex;
     max-height: 4rem;

@@ -9,10 +9,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
  }
 
 //Phones
-@media only screen 
-// and (min-device-width: 320px) 
-and (max-device-width: 879px)
-and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (max-device-width: 879px) {
     .logo { //Header Nike Logo
         margin-left: 1rem;
         -moz-margin-start : 1rem;
@@ -124,14 +121,6 @@ and (-webkit-min-device-pixel-ratio: 2) {
         flex-direction: column !important;
         justify-content: space-between;
     }
-
-    //Footer 
-
-    .footercredit {
-        font-size: .85rem !important;
-        margin-right: auto !important;
-        margin-left: auto !important;
-    }
 }
 
 //Iphone 4
@@ -148,7 +137,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 // 666px
 @media only screen  
 and (max-device-width: 567px)
-and (-webkit-min-device-pixel-ratio: 2) {
+ {
     // Footer
 
     .footerContainer {
@@ -157,13 +146,15 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
     .giftContainer {
         font-size: 1.05rem;
-        margin-left: .75rem;
+        // margin-left: .75rem;
+        margin-left: auto;
         line-height: 2.2rem;
     }
 
     .getContainer {
         font-size: 1.05rem;
-        margin-left: .5rem;
+        // margin-left: .5rem;
+        margin-left: auto;
         line-height: 2.2rem;
         width: 10rem;
     }
@@ -172,32 +163,13 @@ and (-webkit-min-device-pixel-ratio: 2) {
     .aboutContainer {
         width: 80px;
         font-size: 1.05rem;
-        margin-left: .5rem;
+        // margin-left: .5rem;
+        margin-left: auto;
         line-height: 2.2rem;
-
     }
 
     .txtSmall {
         font-size: .83rem;
-    }
-
-    .smlcolumn {
-        width: inherit;
-        height: inherit !important;
-        align-items: center;
-
-    }
-
-    .socialIcons {
-        width: 90px;
-        height: 35px;
-        margin-left: 0 !important;
-    }
-
-    .footercredit {
-        font-size: .75rem !important;
-        margin-right: auto !important;
-        margin-left: auto !important;
     }
 } 
 
@@ -221,9 +193,9 @@ and (-webkit-min-device-pixel-ratio: 2) {
     }
 }
 
-//767px
-//Mobile Navigation breakpoint
-@media only screen and (max-width: 870px) {
+// 870px
+//Mobile Navigation breakpoint 
+@media only screen and (max-width: 983px) {
 
 //Burger Button Default State
 .headerContainer__burger {
@@ -249,7 +221,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
         margin: .2rem 0rem;
         height: .3rem;
         width: 3rem;
-        top: 50%;
+        top: 100%;
     }
 
     &-3 {
@@ -360,7 +332,11 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
     .infoContainer__header {
         margin: 0 auto 0 auto;
-        // font-size: 5.05rem;
+        font-size: 3.05rem;
+    }
+
+    .infoContainer__hBackground {
+        height: 4rem;
     }
 
     .infoMiddle__color {
@@ -392,6 +368,21 @@ and (-webkit-min-device-pixel-ratio: 2) {
     // .imgContainer {
     //     margin-top: 7.5rem;
     // }
+    
+    .iconContainer {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .footerContainer {
+        flex-wrap: wrap;
+    }
+
+    .giftContainer, .getContainer, .aboutContainer {
+        width: 20%;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
 }
 
 //Desktop
@@ -429,15 +420,6 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
     .aboutContainer {
         margin-right: 1rem;
-    }
-
-    .socialIcons {
-        margin-top: 1rem !important;
-        margin-right: 1rem ;
-    }
-
-    .footercredit {
-        margin: 0rem auto 0rem auto !important;
     }
 }
 

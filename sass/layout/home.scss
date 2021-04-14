@@ -141,6 +141,11 @@
             padding: .5rem;
         }
 
+        &-smallTxt:hover {
+            transform: scale(1.15);
+            text-decoration: underline solid 1px;
+        }
+
         &-largeTxt {
             font-size: 2rem;
         }

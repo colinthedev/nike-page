@@ -1,0 +1,11 @@
+.DS_Store
+
+.sass-cache/
+
+.vscode/
+
+img/.DS_Store
+
+node_modules/
+
+package-lock.json
