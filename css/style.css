@@ -33,11 +33,15 @@
   height: 1.75rem; }
 
 .favIcon {
+  display: block;
+  cursor: pointer;
   height: 1.9rem;
   width: 1.9rem;
   margin-left: 1rem; }
 
 .bagIcon {
+  display: block;
+  cursor: pointer;
   height: 1.9rem;
   width: 1.9rem;
   margin-right: 1rem; }
@@ -72,7 +76,7 @@
     border: 1px solid #D476D6;
     box-shadow: inset 0, 0, 0, 1px #D476D6;
     z-index: 1000; }
-  .numContainer__wrapper:active {
+  .numContainer__wrapper.active {
     background: radial-gradient(circle, #f8f9fb 0%, #d476d6 100%);
     transform: translateX(-3px);
     border: 1px solid #D476D6;
@@ -563,7 +567,12 @@ template {
     justify-content: space-evenly;
     width: 74rem;
     height: 8rem;
-    margin: 0 auto 0 auto; }
+    margin: 0 0 0 auto; }
+  .headerContainer__middle-purchase {
+    display: flex;
+    width: 70%;
+    flex-direction: row;
+    justify-content: space-around; }
   .headerContainer__middle-purchase button {
     cursor: pointer;
     font-size: 2rem;
@@ -625,9 +634,16 @@ template {
   background: #F8F9FB; }
   .imgContainer__border {
     z-index: 100;
-    cursor: pointer; }
+    cursor: pointer;
+    width: 353px; }
   .imgContainer button {
     border: 5px solid #fff; }
+
+.blue {
+  padding: .25rem; }
+
+.red {
+  padding: .25rem; }
 
 .infoContainer {
   display: flex;
@@ -1005,6 +1021,9 @@ template {
     width: 20%;
     margin-bottom: 2rem;
     margin-top: 2rem; } }
+@media only screen and (min-width: 1250px) {
+  .headerContainer__middle {
+    margin: 0 auto 0 auto; } }
 @media only screen and (min-width: 1340px) {
   .infoContainer {
     margin-left: 1.5rem; }

@@ -385,6 +385,13 @@ and (-webkit-min-device-pixel-ratio: 2) {
     }
 }
 
+//Tablet + Desktop
+@media only screen and (min-width: 1250px) {
+    .headerContainer__middle {
+        margin: 0 auto 0 auto;
+    }
+}
+
 //Desktop
 @media only screen and (min-width: 1340px) {
 

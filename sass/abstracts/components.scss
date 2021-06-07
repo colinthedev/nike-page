@@ -12,12 +12,16 @@
 }
 
 .favIcon { //Header Favorite Icon
+    display: block;
+    cursor: pointer;
     height: 1.9rem;
     width: 1.9rem;
     margin-left: 1rem;
 }
 
 .bagIcon { //Header Shopping Bag Icon
+    display: block;
+    cursor: pointer;
     height: 1.9rem;
     width: 1.9rem;
     margin-right: 1rem;
@@ -61,7 +65,7 @@
         z-index: 1000;
     }
 
-    &__wrapper:active {
+    &__wrapper.active {
         background: radial-gradient(circle, rgba(248,249,251,1) 0%, rgba(212,118,214,1) 100%);
         transform: translateX(-3px);
         border: 1px solid #D476D6;

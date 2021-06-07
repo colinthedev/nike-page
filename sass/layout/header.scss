@@ -14,7 +14,14 @@
         justify-content: space-evenly;
         width: 74rem;
         height: 8rem;
-        margin: 0 auto 0 auto;
+        margin: 0 0 0 auto;
+    }
+
+    &__middle-purchase {
+        display: flex;
+        width: 70%;
+        flex-direction: row;
+        justify-content: space-around;
     }
 
     &__middle-purchase button {

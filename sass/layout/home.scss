@@ -17,13 +17,31 @@
     background: #F8F9FB;
 
     &__border {
+        // display: none;
         z-index: 100;
         cursor: pointer;
+        width: 353px;
     }
     
     button {
         border: 5px solid #fff;
     }
+}
+
+// .active {
+//     display: block;
+// }
+
+// .multi {
+//     display: none;
+// }
+
+.blue {
+    padding: .25rem;
+}
+
+.red {
+    padding: .25rem;
 }
 
 .infoContainer { //Main Content Section Shoe Header And Info

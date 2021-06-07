@@ -1,19 +1,22 @@
-//Burger Button Navigation Open
+'Use strict'
+
+// Burger Button Navigation Open
 const navOpen = () => {
     //Burger Icon
-    const burgerBtn = document.querySelector(".headerContainer__burger");
-    const burger1 = document.querySelector(".headerContainer__burger-1");
-    const burger2 = document.querySelector(".headerContainer__burger-2");
-    const burger3 = document.querySelector(".headerContainer__burger-3");
+    let burgerBtn = document.querySelector(".headerContainer__burger");
+    let burger1 = document.querySelector(".headerContainer__burger-1");
+    let burger2 = document.querySelector(".headerContainer__burger-2");
+    let burger3 = document.querySelector(".headerContainer__burger-3");
     //Burger Animation
-    const burger1open = document.querySelector(".headerContainer__burger-1");
-    const burger2open = document.querySelector(".headerContainer__burger-2");
-    const burger3open = document.querySelector(".headerContainer__burger-3");
+    let burger1open = document.querySelector(".headerContainer__burger-1");
+    let burger2open = document.querySelector(".headerContainer__burger-2");
+    let burger3open = document.querySelector(".headerContainer__burger-3");
     //Nav Container And Items
-    const linkContainer = document.querySelector(".headerContainer__middle");
-    const linkItems = document.querySelector(".headerContainer__middle-purchase");
-    const searchAndIcons = document.querySelector(".headerContainer__rBottom");
-    const logo = document.querySelector(".logo");
+    let linkContainer = document.querySelector(".headerContainer__middle");
+    let linkItems = document.querySelector(".headerContainer__middle-purchase");
+    let searchAndIcons = document.querySelector(".headerContainer__rBottom");
+    let logo = document.querySelector(".logo");
+
   
     burgerBtn.addEventListener('click', () => {
         //Burger Icon
@@ -31,48 +34,100 @@ const navOpen = () => {
         searchAndIcons.classList.toggle("headerContainer__rBottom-active");
         logo.classList.toggle("logo-active");
     });
-  }
-
+  };
   navOpen();
 
 
-//Review Section
+// Review Section
 const reviewsOpen = () => {
-    var expandArrow = document.querySelector(".span");//Selects expand arrow
-    var hide = document.querySelector(".reviewsHide");//Selects review section to enable disable accordion 
+    let expandArrow = document.querySelector(".span");//Selects expand arrow
+    let hide = document.querySelector(".reviewsHide");//Selects review section to enable disable accordion 
 
     expandArrow.addEventListener('click', () => {
         hide.classList.toggle("reviewsHide");//Toggles between display none
         expandArrow.classList.toggle("spanshow");//Toggle between rotate 90deg
     });
-}
+};
 
 reviewsOpen();
 
+// Shoe size button
+// Get the shoe size button
+let shoeSizeBtn = document.querySelectorAll('.numContainer__wrapper');
+// console.log(shoeSizeBtn);
 
-
-const panels = document.querySelectorAll('.numContainer')
-
-panels.forEach(numContainer => {
-    numContainer.addEventListener('click', () => {
+// Add active class to selected size button
+shoeSizeBtn.forEach(numContainer__wrapper => {
+    numContainer__wrapper.addEventListener('click', () => {
         removeActiveClasses()
-        numContainer.classList.add('active')
-    })
+        numContainer__wrapper.classList.add('active')
+    });
+});
+
+// Remove active class from previous size button
+function removeActiveClasses() {
+    shoeSizeBtn.forEach(numContainer__wrapper => {
+        numContainer__wrapper.classList.remove('active')
+    });
+};
+
+
+// Shoe color
+// Get buttons
+let multiColorBtn = document.getElementById('multiBtn');
+let blueColorBtn = document.getElementById('blueBtn');
+let redColorBtn = document.getElementById('redBtn');
+// console.log(multiColorBtn);
+
+// Get images
+let shoeSide = document.getElementById('side');
+let shoeTop = document.getElementById('top');
+let shoeBottom = document.getElementById('bottom');
+let shoeSide2 = document.getElementById('side2');
+// console.log();
+
+// Change image on click
+// Multi
+multiColorBtn.addEventListener('click', function() {
+    shoeSide.src = 'img/main/ShoeSide.svg';
+    shoeTop.src = 'img/main/ShoeTop.svg';
+    shoeBottom.src = 'img/main/ShoeBottom.svg';
+    shoeSide2.src = 'img/main/ShoeSide2.svg';
 })
 
-function removeActiveClasses() {
-    numContainer.forEach(numContainer => {
-        numContainer.classList.remove('active')
-    })
-}
+// Blue
+blueColorBtn.addEventListener('click', function() {
+    shoeSide.src = 'img/main/ShoeSide-blue.svg';
+    shoeTop.src = 'img/main/ShoeTop-blue.svg';
+    shoeBottom.src = 'img/main/ShoeBottom-blue.svg';
+    shoeSide2.src = 'img/main/ShoeSide2-blue.svg';
+})
+
+// Red
+redColorBtn.addEventListener('click', function() {
+    shoeSide.src = 'img/main/ShoeSide-red.svg';
+    shoeTop.src = 'img/main/ShoeTop-red.svg';
+    shoeBottom.src = 'img/main/ShoeBottom-red.svg';
+    shoeSide2.src = 'img/main/ShoeSide2-red.svg';
+})
 
 
+// Shoe color buttons
+// Get the shoe color button
+// let shoeColorBtn = document.querySelectorAll('.colorBtn');
+// console.log(shoeColorBtn);
 
-// // Get the button, and when the user clicks on it, execute myFunction
-// document.querySelector(".span").onclick = function() {myFunction()};
+// shoeColorBtn.forEach(colorBtn => {
+//     colorBtn.addEventListener('click', () => {
+//         removeActiveColor()
+//         colorBtn.classList.add('active')
+//         // console.log(colorBtn);
+//     });
+// });
 
-// /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
-// function myFunction() {
-//   document.querySelector(".reviewsHide").classList.toggle("show");
-//   document.querySelector(".span").classList.toggle("spanshow");
-// }
+// function removeActiveColor() {
+//     shoeColorBtn.forEach(colorBtn => {
+//         colorBtn.classList.remove('active')
+//         console.log(colorBtn);
+//     });
+// };
