@@ -27,7 +27,7 @@ The goal was to create a layout that was clear and engaging.
 <br>
 <br>
 
-## Final Considerations :memo:
+## Final Considerations 
 
 This project was great practice to strengthen my flexbox knowledge.   
 <br>
